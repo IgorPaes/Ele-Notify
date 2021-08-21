@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+body {
+  background-color: black !important;
+}
+
+h1 {
+  font-size: 0;
+  margin-bottom: 0 !important;
+}
+
+.base {
+  width: 20rem;
+  animation: principaltrans 0.5s ease-in 0.1s reverse;
+  text-align: center;
+}
+.base__bord {
+  border-top: 1px solid rgba(128, 128, 128, 0.6);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.6);
+}
+.base__txt {
+  width: 100%;
+  font-size: 100%;
+  font-weight: 500;
+  line-height: 1.3rem;
+  padding-top: 3%;
+  letter-spacing: 1px;
+  padding-bottom: 3.6%;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+.base__fig {
+  width: 22%;
+  animation: rotatefig 0.6s ease-in 0.3s 3.2;
+  margin-top: 0.4rem;
+}
+.base__img1 {
+  width: 8%;
+  opacity: 0.4;
+}
+.base__img2 {
+  width: 8%;
+  opacity: 0.4;
+  margin-bottom: 0.4rem;
+  transform: rotate(180deg);
+}
+.base__img-seta {
+  animation: rotateseta 0.8s ease-in reverse;
+}
+.base__pad {
+  padding-left: 3%;
+  width: 75%;
+}
+.base__p {
+  text-align: right;
+  vertical-align: bottom;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: white;
+  opacity: 0.8;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+.base__section {
+  padding: 0 !important;
+}
+.base__bordes-alert {
+  border-top: 1px solid #5c5c5c;
+  border-left: 1px solid #5c5c5c;
+  border-right: 1px solid #5c5c5c;
+}
+.base__alert {
+  position: relative;
+  animation: gradient 1.5s ease alternate infinite;
+  background: linear-gradient(-45deg, #1e1e1e 94%, rgba(52, 251, 114, 0.86) 6%) no-repeat;
+  justify-content: center;
+  background-size: 100% 100%;
+  padding: 1px 0 0.6rem 0.2rem;
+  border-radius: 0.3rem 0.3rem 0 0;
+  display: flex;
+  margin-bottom: 0;
+  color: white;
+}
+.base__progress {
+  animation: barprogress 2.8s ease-in 0.1s reverse;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+.progress {
+  border-radius: 0 !important;
+  background-color: #1e1e1e !important;
+  border: 1px solid rgba(128, 128, 128, 0.6);
+}
+
+.progress-bar {
+  background-color: rgba(52, 251, 114, 0.86) !important;
+  box-shadow: 0.6rem 0.7rem 1.4rem 0.8rem rgba(128, 128, 128, 0.6);
+}
+
+@keyframes principaltrans {
+  100% {
+    transform: translate(calc(100vh - 320px));
+  }
+}
+@keyframes rotatefig {
+  from {
+    transform: rotate(6deg);
+  }
+  to {
+    transform: rotate(-4deg);
+  }
+}
+@keyframes rotateseta {
+  100% {
+    transform: translate(calc(100vh - 320px));
+  }
+}
+@keyframes barprogress {
+  100% {
+    transform: translate(calc(3% - 320px));
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
